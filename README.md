@@ -1,3 +1,3 @@
-# adeolaadeoti-portfolio
+# Mattia Penna - portfolio
 My personal website
-https://adeolaadeoti.netlify.app
+http://tiapnn.herokuapp.com/
