@@ -1,24 +1,35 @@
 {
-  "name": "raba",
+  "name": "mattiapenna-portfolio",
   "version": "1.0.0",
-  "description": "",
+  "description": "Mattia Penna personal portfolio",
   "main": "index.js",
-  "engines": {
-    "node": "14.0.0",
-    "npm": "6.14.4"
-  },
-  "scripts": {
-    "dev": "rm -rf ./development && rm -rf ./.cache && parcel src/index.html --out-dir development -p 3000",
-    "build": "parcel build src/index.html --out-dir dist --public-url ./"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.10.2",
     "@babel/plugin-transform-runtime": "^7.10.1",
     "@babel/runtime-corejs3": "^7.10.2",
     "parcel-bundler": "^1.12.4",
     "sass": "^1.26.8"
-  }
+  },
+  "scripts": {
+    "dev": "rm -rf ./development && rm -rf ./.cache && parcel src/index.html --out-dir development -p 3000",
+    "build": "parcel build src/index.html --out-dir dist --public-url ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tiapnn/mattiapenna-portfolio.git"
+  },
+  "keywords": [
+    "Mattia",
+    "Penna",
+    "portfolio",
+    "Software",
+    "Developer"
+  ],
+  "author": "tiapnn",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tiapnn/mattiapenna-portfolio/issues"
+  },
+  "homepage": "https://github.com/tiapnn/mattiapenna-portfolio#readme"
 }
