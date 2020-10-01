@@ -4,7 +4,8 @@
 
     &-box__wrapper {
         margin-top: 8rem;
-        display: grid;grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+        display: inline-grid;
+        grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
         grid-gap: 4rem;
     }
 

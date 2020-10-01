@@ -38,7 +38,7 @@ $secondary-font: 'Calibre-SemiBold', sans-serif;
 $tertiary-font: 'Calibre-Medium', sans-serif;
 
 //colors
-$primary-color: #f7ac09;
+$primary-color: #EFC518;
 $secondary-color: #797575;
 $white: #FFFFFF;
 $black: #000000;
@@ -55,7 +55,7 @@ $bgcolor: whitesmoke;
     margin: 0;
     padding: 0;
     box-sizing: inherit;
-    // border: solid 2px red;
+    //border: solid 2px red;
 }
 
 html {
@@ -267,7 +267,7 @@ section {
     &:hover {
         background-color: transparent;
         border: 1.5px solid $white;
-        color: $white;
+        color: $secondary-color;
     }
 }
 
