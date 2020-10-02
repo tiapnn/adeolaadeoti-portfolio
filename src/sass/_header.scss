@@ -5,7 +5,7 @@
     top: 0;
     left: 0;
     .nav-icon {
-        background-color: #000;
+        background-color: $secondary-color;
         position: absolute;
         right: 4rem;
         top: 2.5rem;
@@ -145,7 +145,7 @@
         min-height: 70rem;    
     }
     &:after {
-        content: "";
+        content: "suuuup";
         position: absolute;
         width: 100vw;
         height: 100%;
