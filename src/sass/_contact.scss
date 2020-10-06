@@ -1,6 +1,11 @@
 .contact {
     grid-column: 2/14;
     padding: 6rem;
+    display: inline-flex;
+
+    &-outer__wrapper {
+        justify-content: space-around;
+    }
 
     &-box__wrapper {
         margin-top: 8rem;
