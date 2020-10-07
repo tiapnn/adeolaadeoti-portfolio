@@ -18,7 +18,7 @@
         position: relative;
 
         &:hover {
-            border: solid 2px $white;
+            border: solid 2px $black;
             color: $white;
         }
     }
@@ -66,6 +66,6 @@
         filter: invert(1);
     }
     &:hover:after {
-        outline: 2px solid $white;
+        outline: 2px solid $black;
     }
 }
