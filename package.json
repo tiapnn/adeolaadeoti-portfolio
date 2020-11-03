@@ -17,7 +17,8 @@
   },
   "scripts": {
     "dev": "rm -rf ./development && rm -rf ./.cache && parcel src/index.html --out-dir development -p 3000",
-    "build": "parcel build src/index.html --out-dir dist --public-url ./"
+    "build": "parcel build src/index.html --out-dir dist --public-url ./",
+    "start": "npm run dev"
   },
   "repository": {
     "type": "git",
