@@ -1,4 +1,4 @@
-import './sass/main.scss';
+//import '/sass/main.scss';
 
 // preloader 
 const preloaderTL = gsap.timeline();
