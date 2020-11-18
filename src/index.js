@@ -1,4 +1,4 @@
-//import '/sass/main.scss';
+import '/sass/main.scss';
 
 // preloader 
 const preloaderTL = gsap.timeline();
@@ -13,10 +13,10 @@ socialLinks.forEach(link => {
 
 
 // custom cursor
-const cursor = document.querySelector('.cursor');
-window.onmousemove = (e) => {
-    cursor.setAttribute('style', `top: ${e.pageY}px; left: ${e.pageX}px; z-index: 2;`)    
-}
+// const cursor = document.querySelector('.cursor');
+// window.onmousemove = (e) => {
+//     cursor.setAttribute('style', `top: ${e.pageY}px; left: ${e.pageX}px; z-index: 2;`)    
+// }
 
 // navigation
 const tl = gsap.timeline({paused:true, reversed: true});

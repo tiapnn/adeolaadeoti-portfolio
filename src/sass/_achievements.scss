@@ -43,6 +43,10 @@
     }
     &-box__content {
         align-self: center;
+
+        img {
+            width: 100%;
+        }
     }
 }
 
