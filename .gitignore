@@ -1,5 +1,6 @@
 node_modules
 /development
+/development_oldd
 /.vscode
 /.cache
 /bkp
