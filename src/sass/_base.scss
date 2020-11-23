@@ -43,6 +43,12 @@ $secondary-color: #797575;
 $white: #FFFFFF;
 $black: #000000;
 $bgcolor: whitesmoke;
+$shadows: #00000029;
+
+//breakpoints
+
+$bp-mobile: 426px;
+$bp-tablet: 769px;
 
 
 /*--------------------------
@@ -67,9 +73,7 @@ html {
     scroll-behavior: smooth;
     width: 100%;
     height: 100%;
-    max-width: 100%;
-    overflow-x: hidden!important;
-    
+    max-width: 100%;    
     
     @media only screen and (max-width: 62.5em) { // tab-land
         font-size: 56.25%;

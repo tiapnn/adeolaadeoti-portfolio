@@ -1,10 +1,7 @@
 .contact {
     grid-column: 2/14;
     padding: 6rem;
-    background-image: url("/img/jpeg/mapimage.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    
 
 
     &-box__wrapper {
@@ -13,18 +10,52 @@
         grid-gap: 4rem;
         color: $black;
         margin-top: 6rem;
+
+        background-image: url("/img/jpeg/mapimage.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
         
     }
 
     &-box {
-        color: black;
+        color: $black;
+        justify-content: space-around;
 
         h5 {
-            color: black;
+            color: $black;
         }
 
         &-field {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            font-size: 1.5em;
+            border-radius: 15px;
+            background: $bgcolor;
+            margin: 25px;
+            box-shadow: 0px 15px 15px $shadows;
+            width: 40%;
             
+            @media (max-width:$bp-tablet) {
+                width: auto;
+            }
+
+            a {
+                text-decoration: none;
+            }
+
+            span {
+                color: $black;
+                margin: 15px;
+                text-shadow: 0px 15px 15px $shadows;
+            }
+
+
+            &:hover {
+                filter: invert(100%);
+            }
+
         }
     }
 

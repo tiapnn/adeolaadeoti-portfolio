@@ -1,9 +1,9 @@
 import '/sass/main.scss';
 
-// preloader 
-const preloaderTL = gsap.timeline();
+// // preloader 
+// const preloaderTL = gsap.timeline();
 // preloaderTL.to('#logo', {yPercent: -20, opacity: 0, delay: 4})
-preloaderTL.to('.preloader', {transform: 'scaleY(0)', transformOrigin: 'top', delay: '-=3'})
+// preloaderTL.to('.preloader', {transform: 'scaleY(0)', transformOrigin: 'top', delay: 10})
 
 // open all social links in new tab
 let socialLinks = document.querySelectorAll('.social-links--box a');
