@@ -3,7 +3,8 @@
     padding: 6rem;
 
     &-box__wrapper {
-        display: grid;grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
         grid-gap: 4rem;
         color: $black;
         margin-top: 6rem;
@@ -16,6 +17,14 @@
         flex-direction: column;
         justify-content: space-between;
         position: relative;
+
+        a {
+            color: $black;
+        }
+
+        img {
+            max-height: 250px;
+        }
 
         &:hover {
             border: solid 2px $black;

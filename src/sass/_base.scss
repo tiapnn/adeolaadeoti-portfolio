@@ -38,8 +38,8 @@ $secondary-font: 'Calibre-SemiBold', sans-serif;
 $tertiary-font: 'Calibre-Medium', sans-serif;
 
 //colors
-$primary-color: #EFC518;
-$secondary-color: #797575;
+$primary-color: #18ef60;
+$secondary-color: #f8ac1d;
 $white: #FFFFFF;
 $black: #000000;
 $bgcolor: whitesmoke;
@@ -272,7 +272,7 @@ section {
     cursor: pointer;
     transition: all .3s ease-in-out;
     &:hover {
-        background-color: transparent;
+        background-color: $black;
         border: 1.5px solid $white;
         color: $secondary-color;
     }
