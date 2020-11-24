@@ -1,3 +1,3 @@
 # Mattia Penna - portfolio
 My personal website
-http://tiapnn.herokuapp.com/
+http://tiapnn.netlify.app/
