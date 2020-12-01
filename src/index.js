@@ -47,3 +47,18 @@ allLinks.forEach(link => {
     })
 })
 
+document.querySelectorAll('.project video').forEach( video => {
+
+    video.onclick = () => {
+        video.focus();
+    }
+
+    video.onfocus = () => { 
+        video.muted = false;
+    }
+
+    video.onblur = () => { 
+        video.muted = true;
+    }
+})
+
