@@ -49,18 +49,35 @@ allLinks.forEach(link => {
 
 
 const projs = document.querySelectorAll('#projects .project-box')
+const contents = document.querySelectorAll("#projects .project-box__content")
+const links = document.querySelectorAll("#projects .project-box__link")
+
 projs.forEach( proj => {
-
-    proj.onclick = () => {
-
-        if (proj.style.height == "50rem") {
-            proj.style.height = "35rem" 
-        } else {
-            projs.forEach( p => { p.style.height = "35rem" })
-            proj.style.height = "50rem"
-        }
-        
-    }
-
+    proj.onclick = () => viewProj(proj) 
 })
 
+function resetProjs() {
+    projs.forEach(p => p.style.height = "35rem")
+    contents.forEach(c => c.style.opacity = "1")
+    links.forEach(l => l.classList.remove("shaky"))
+}
+
+function viewProj(proj) {
+    let content = proj.querySelector("#projects .project-box__content")
+    let link = proj.querySelector("#projects .project-box__link")
+
+    if (proj.style.height == "50rem")
+    {
+        proj.style.height = "35rem" 
+        content.style.opacity = "1"
+        link.classList.remove("shaky")
+    } 
+    else 
+    {
+        resetProjs()
+        proj.style.height = "50rem"
+        content.style.opacity = "0"
+        link.classList.add("shaky")
+    }
+    
+}

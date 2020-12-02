@@ -1,6 +1,11 @@
 .achievements {
     grid-column: 2/14;
     padding: 6rem;
+    
+    a {
+        color: $black;
+        text-decoration: none;
+    }
 
     &-box__wrapper {
         display: grid;
@@ -8,7 +13,7 @@
         grid-gap: 4rem;
         color: $black;
         margin-top: 6rem;
-    }   
+    }
 
     &-box {
         padding: 2rem;
@@ -18,67 +23,34 @@
         justify-content: space-between;
         position: relative;
 
-        a {
-            color: $black;
-        }
-
         img {
-            max-height: 250px;
+            object-fit: fill;
+            max-height: 19rem;
         }
 
         &:hover {
             border: solid 2px $black;
-            color: $white;
-        }
-    }
-
-    .achievements-box:nth-child(1) {
-        background: linear-gradient(to bottom, #F3CBAB, #FEEDCA);
-    }
-    .achievements-box:nth-child(2) {
-        background: linear-gradient(to bottom, #B1E5F9, #F4D2FE);
-    }
-
-    &-box__link {
-        align-self: flex-end;
-        width: 20%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        @media only screen and (max-width: 56.25em) { // tab-port
-            width: 30%;
         }
 
-    }
-    &-box__content {
-        align-self: center;
-
-        img {
-            width: 100%;
+        &:after {
+            content: '';
+            position: absolute;
+            width: 103%;
+            height: 101%;
+            top: 1rem;
+            right: 0;
+            z-index: -1;
         }
-    }
-}
+    
+        &:hover:after {
+            outline: 2px solid $black;
+        }
 
-// hover state
-.achievements-box {
-    background: linear-gradient(to bottom, #F3CBAB, #FEEDCA);
-    &:after {
-        content: '';
-        position: absolute;
-        width: 103%;
-        height: 101%;
-        top: 1rem;
-        right: 0;
-        z-index: -1;
-    }
-    &:hover {
-        background: none;
-        background-color: $black;
-    }
-    &:hover  img {
-        filter: invert(1);
-    }
-    &:hover:after {
-        outline: 2px solid $black;
+        &:nth-child(1) {
+            background: linear-gradient(to bottom, #F3CBAB, #FEEDCA);
+        }
+        &:nth-child(2) {
+            background: linear-gradient(to bottom, #B1E5F9, #F4D2FE);
+        }
     }
 }

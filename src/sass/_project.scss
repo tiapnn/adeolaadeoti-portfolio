@@ -18,14 +18,9 @@
         position: relative;
         background-position: center;
         background-size: cover;
+        cursor: pointer;
 
-
-
-        // transitions props 
-        transition-property: height;
-        transition-duration: 0.5s;
-        transition-timing-function: linear;
-        transition-delay: 0.1s;
+        @include transitionEase(height); 
 
         &:focus {
             height: 400px;
@@ -48,6 +43,7 @@
     }
     &-box__content {
         align-self: center;
+        @include transitionEase(opacity); 
     }
 }
 
