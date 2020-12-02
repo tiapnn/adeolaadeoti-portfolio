@@ -47,7 +47,7 @@
             z-index: 1;
             display: flex;
             .box {
-                background-color: $primary-color;
+                background-color: $tertiary-color;
                 width: calc(100vw / 4);
                 height: 0vh;
             }
@@ -60,6 +60,11 @@
             filter: brightness(1%);
             opacity: 0;
         }
+
+        .shadow-sec {
+            filter: drop-shadow(2px 2px 1px $black);
+        }
+
         &__content {
             opacity: 0;
             visibility: hidden;
@@ -87,25 +92,26 @@
                         align-items: center;
                         img {
                             margin-right: 2rem;
-                            height: 1.7rem;
+                            height: 2.7rem;
                             filter: brightness(1%);
                         }
+
+
                     }
                     &--box:nth-child(2) {
                         margin-top: 1rem;
                     }
                 }
                 .resume {
-                    font-size: 5rem;
-                    text-decoration: none;
-                    color: $black;
-                    font-family: $tertiary-font;
-                    letter-spacing: -2px;
-                    align-self: flex-start;
-                    transition: all .2s ease-in-out;
-                        &:hover {
-                            letter-spacing: 3px;
-                        }
+                    a {
+                        text-decoration: none;
+                    }
+                    img {
+                        height: 7rem;
+                    }
+                    figcaption {
+                        color: $black;
+                    }
                 }
                 .list {
                     justify-self: flex-start;
@@ -208,33 +214,8 @@
         top: 1.5rem;
         left: 1.5rem;
     }
-  }
+}
   
-// svg {
-//     position: absolute;
-//     right: 0;
-//     top: -38%;
-// }
-  
-// svg rect {
-//     fill: white;
-//     -webkit-mask: url('#mask');
-//             mask: url('#mask');
-// }
-  
-// svg text {
-//     font-size: 10rem;
-//     fill: black;
-//     text-transform: lowercase;
-//     letter-spacing: -5px;
-//     font-family: $secondary-font;
-// }
-  
-// svg > rect {
-//     fill: black;
-//     width: 100%;
-// }
-
 // animation 
 .nav-anim .bar1 {
     transform: rotate(-45deg) translate(-6px, 7px);

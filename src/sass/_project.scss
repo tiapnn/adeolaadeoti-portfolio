@@ -19,6 +19,14 @@
         background-position: center;
         background-size: cover;
 
+
+
+        // transitions props 
+        transition-property: height;
+        transition-duration: 0.5s;
+        transition-timing-function: linear;
+        transition-delay: 0.1s;
+
         &:focus {
             height: 400px;
         }

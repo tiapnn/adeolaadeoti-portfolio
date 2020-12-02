@@ -47,18 +47,20 @@ allLinks.forEach(link => {
     })
 })
 
-document.querySelectorAll('.project video').forEach( video => {
 
-    video.onclick = () => {
-        video.focus();
+const projs = document.querySelectorAll('#projects .project-box')
+projs.forEach( proj => {
+
+    proj.onclick = () => {
+
+        if (proj.style.height == "50rem") {
+            proj.style.height = "35rem" 
+        } else {
+            projs.forEach( p => { p.style.height = "35rem" })
+            proj.style.height = "50rem"
+        }
+        
     }
 
-    video.onfocus = () => { 
-        video.muted = false;
-    }
-
-    video.onblur = () => { 
-        video.muted = true;
-    }
 })
 

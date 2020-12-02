@@ -39,7 +39,8 @@ $tertiary-font: 'Calibre-Medium', sans-serif;
 
 //colors
 $primary-color: #ef9218;
-$secondary-color: #a89e8c;
+$secondary-color: #918d8d;
+$tertiary-color: #ffec3e;
 $white: #FFFFFF;
 $black: #000000;
 $bgcolor: whitesmoke;
@@ -238,18 +239,20 @@ section {
 }
 
 .heading-4 {
+    font-size: 2rem;
+
     text-transform: uppercase;
     letter-spacing: 5px;
 }
 
 .heading-5 {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     text-transform: uppercase;
     letter-spacing: 3px;
 }
 
 .paragraph {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     color: $secondary-color;
 }
 
@@ -265,14 +268,14 @@ section {
     color: $black;
     border-radius: 10rem;
     text-transform: uppercase;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-family: $secondary-font;
     letter-spacing: 3px;
     border: 1.5px solid transparent;
     cursor: pointer;
     transition: all .3s ease-in-out;
     &:hover {
-        background-color: $secondary-color;
+        background-color: $tertiary-color;
         border: 1.5px solid $white;
     }
 }
@@ -303,3 +306,10 @@ section {
     margin-top: 1rem;
 }
 
+.grow { 
+    transition: all .2s ease-in-out; 
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
