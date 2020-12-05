@@ -17,7 +17,8 @@
 
     &-box {
         padding: 2rem;
-        height: 35rem;
+        height: 100%;
+        max-height: 45rem;
         display: flex;
         flex-direction: column;
         justify-content: space-between;

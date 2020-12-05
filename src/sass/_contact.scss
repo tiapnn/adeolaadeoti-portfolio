@@ -10,49 +10,79 @@
         grid-gap: 4rem;
         color: $secondary-color;
         margin-top: 6rem;
-
-        background-image: url("/img/jpeg/mapimage.jpg");
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
+        margin-bottom: 3rem;
+        
+        @include bgImg("/img/png/map.png");
         
     }
-
+    
     &-box {
-        color: $primary-color;
+        margin:  50px auto -50px;
+        background-color:$pasta-color;
+        height: 100%;
+        width: 90%;
+        padding: 1rem;
+        display: flex;
         justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        box-shadow: 0px 15px 15px #00000029;
 
-        &-field {
-            display: flex;
-            align-items: center;
-            padding: 10px;
-            font-size: 1.5em;
-            border-radius: 15px;
-            background: $bgcolor;
-            margin: 25px;
-            box-shadow: 0px 15px 15px $shadows;
-            width: 40%;
+        @media (max-width: $bp-mobile) {
+            text-align: center;
+        }
+        
+        h2 {
+            color: $black;
+        }
+
+        q {
+            font-size: 2rem;
+            margin: 15px;
+            font-style: italic;
+            text-shadow: 0px 15px 15px #00000029;
+            &::after, &::before {
+                content: none;
+            }
+        }   
+
+        .anchors {
+            text-decoration: none;
+            color: $secondary-color;
+            font-size: 2rem;
             
-            @media (max-width:$bp-tablet) {
-                width: auto;
-            }
-
             a {
-                text-decoration: none;
-            }
-
-            span {
-                color: $secondary-color;
-                margin: 15px;
-                text-shadow: 0px 15px 15px $shadows;
-            }
-
-
-            &:hover {
-                filter: invert(100%);
+                margin-right: 10px;
+                filter: brightness(0);
             }
 
         }
+
+        .mailz {
+            font-size: 2.5rem;
+            font-weight: 600;
+            display: block;
+            color: $secondary-color;
+
+            &:hover {
+                filter: sepia(1);
+            }
+        }
+
+        .img-container {
+            @include bgImg("/img/png/me.png");
+            height: 16rem;
+            width: 16rem;
+            border: 2px solid $white;
+            border-radius: 50%;
+            box-shadow: 0px 15px 15px $shadows;
+        }
+
+        &-col {
+            max-width: 270px;
+            padding: 25px 15px;
+        }
+
     }
 
 }

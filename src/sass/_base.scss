@@ -41,6 +41,7 @@ $tertiary-font: 'Calibre-Medium', sans-serif;
 $primary-color: #ef9218;
 $secondary-color: #918d8d;
 $tertiary-color: #ffec3e;
+$pasta-color: #FFFEA1;
 $white: #FFFFFF;
 $black: #000000;
 $bgcolor: whitesmoke;
@@ -308,6 +309,9 @@ section {
 }
 .mt-s {
     margin-top: 1rem;
+}
+.mt-m {
+    margin-top: 2rem;
 }
 
 .grow { 

@@ -4,3 +4,10 @@
   transition-timing-function: ease-in-out;
   transition-delay: 0.1s;
 }
+
+@mixin bgImg($url) {
+  background-image: url($url);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
