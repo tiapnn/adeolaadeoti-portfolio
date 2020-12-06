@@ -159,6 +159,9 @@
         right: 0;
         z-index: -1;
         background: url('../img/svg/home-bg.svg') 90% 0 no-repeat;
+        @media (max-width: $bp-mobile) {
+            filter: opacity(0.06);
+        }
     }
         
         @media only screen and (max-width: 56.25em) { // tab-land
@@ -176,7 +179,8 @@
         left: 10%;
         transform: translateY(-70%);
         @media only screen and (max-width: 56.25em) { // tab-land
-            top: 55%;
+            top: 60%;
+
         }
     }
 }
