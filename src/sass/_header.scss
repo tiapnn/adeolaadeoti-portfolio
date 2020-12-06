@@ -146,9 +146,9 @@
 .header {
     position: relative;
     overflow: hidden;
-    min-height: 80rem;  
+    min-height: 70rem;  
     @media only screen and (max-width: 37.5em) { // phone
-        min-height: 70rem;    
+        min-height: 60rem;    
     }
     &::before {
         content: "";
