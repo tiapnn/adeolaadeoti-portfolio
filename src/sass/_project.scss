@@ -3,7 +3,8 @@
     padding: 6rem;
 
     &-box__wrapper {
-        display: grid;grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
         grid-gap: 4rem;
         color: $black;
         margin-top: 6rem;
@@ -16,15 +17,40 @@
         flex-direction: column;
         justify-content: space-between;
         position: relative;
-        background-position: center;
-        background-size: cover;
         cursor: pointer;
+
+        box-shadow: 0px 15px 15px $shadows;
+
 
         @include transitionEase(height); 
 
-        &:focus {
-            height: 400px;
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            filter: blur(5px);
+
         }
+
+        &:hover:before, &:hover:focus {
+            filter: blur(0px);
+        }
+
+        &:first-child:before { 
+            @include bgImg('https://tiapnn.github.io/img/tene%20gif.gif');
+        }
+        &:nth-child(2):before { 
+            @include bgImg('https://tiapnn.github.io/img/stoic%20gif.gif');
+        }
+        &:last-child:before { 
+            @include bgImg('https://tiapnn.github.io/img/pomodoro%20gif.gif');
+        }
+        
+            
+        
 
     }
 
@@ -35,6 +61,8 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        z-index: 1;
+
 
         @media only screen and (max-width: 56.25em) { // tab-port
             width: 30%;
@@ -44,6 +72,7 @@
     &-box__content {
         align-self: center;
         @include transitionEase(opacity); 
+        z-index: 1;
     }
 }
 
