@@ -18,10 +18,7 @@
         justify-content: space-between;
         position: relative;
         cursor: pointer;
-
         box-shadow: 0px 15px 15px $shadows;
-
-
         @include transitionEase(height); 
 
         &:before {
@@ -32,8 +29,6 @@
             width: 100%;
             height: 100%;
             filter: brightness(0.5);
-
-
         }
 
         &:hover:before, &:hover:focus {
@@ -50,11 +45,7 @@
             @include bgImg('/img/gif/sofi.gif');
         }
         
-            
-        
-
     }
-
 
     &-box__link {
         align-self: flex-end;
@@ -64,12 +55,12 @@
         align-items: center;
         z-index: 1;
 
-
         @media only screen and (max-width: 56.25em) { // tab-port
             width: 30%;
         }
 
     }
+    
     &-box__content {
         align-self: center;
         @include transitionEase(opacity); 
