@@ -8,8 +8,6 @@
     font-display: swap;
 }
 
-
-
 @font-face {
     font-family: 'Calibre-Medium';
     src:url('../font/Calibre-Medium.woff') format('woff'),
@@ -38,13 +36,13 @@ $secondary-font: 'Calibre-SemiBold', sans-serif;
 $tertiary-font: 'Calibre-Medium', sans-serif;
 
 //colors
-$primary-color: #ef9218;
-$secondary-color: #918d8d;
-$tertiary-color: #ffec3e;
-$pasta-color: blanchedalmond;
+$primary-color: #EF9218;
+$secondary-color: #918D8D;
+$tertiary-color: #FFEC3E;
+$pasta-color: #FEEACD;
 $white: #FFFFFF;
 $black: #000000;
-$bgcolor: whitesmoke;
+$bgcolor: #F5F5F5;
 $shadows: #00000029;
 
 //breakpoints
@@ -131,126 +129,126 @@ section {
     will-change: transform;
 }
 
-.preloader {
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: $black;
-    z-index: 20;
+// .preloader {
+//     width: 100vw;
+//     height: 100vh;
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     background-color: $black;
+//     z-index: 20;
 
-    #logo {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-    }
-    #logo path:nth-child(1) {
-        stroke-width: 1;
-        stroke-dasharray: 393.5;
-        stroke-dashoffset: 393.5;
-        animation: line-anim 2s ease forwards;
-    }
-    #logo path:nth-child(2) {
-        stroke-width: 1;
-        stroke-dasharray: 430;
-        stroke-dashoffset: 430;
-        animation: line-anim 2s ease forwards .3s;
-    }
-    #logo path:nth-child(3) {
-        stroke-width: 1;
-        stroke-dasharray: 413;
-        stroke-dashoffset: 413;
-        animation: line-anim 2s ease forwards .6s;
-    }
-    #logo path:nth-child(4) {
-        stroke-width: 1;
-        stroke-dasharray: 290;
-        stroke-dashoffset: 290;
-        animation: line-anim 2s ease forwards .9s;
-    }
-    #logo path:nth-child(5) {
-        stroke-width: 1;
-        stroke-dasharray: 187;
-        stroke-dashoffset: 187;
-        animation: line-anim 2s ease forwards 1.2s;
-    }
-    #logo path:nth-child(6) {
-        stroke-width: 1;
-        stroke-dasharray: 393;
-        stroke-dashoffset: 393;
-        animation: line-anim 2s ease forwards 1.5s;
-    }
+//     #logo {
+//         position: absolute;
+//         top: 50%;
+//         left: 50%;
+//         transform: translate(-50%,-50%);
+//     }
+//     #logo path:nth-child(1) {
+//         stroke-width: 1;
+//         stroke-dasharray: 393.5;
+//         stroke-dashoffset: 393.5;
+//         animation: line-anim 2s ease forwards;
+//     }
+//     #logo path:nth-child(2) {
+//         stroke-width: 1;
+//         stroke-dasharray: 430;
+//         stroke-dashoffset: 430;
+//         animation: line-anim 2s ease forwards .3s;
+//     }
+//     #logo path:nth-child(3) {
+//         stroke-width: 1;
+//         stroke-dasharray: 413;
+//         stroke-dashoffset: 413;
+//         animation: line-anim 2s ease forwards .6s;
+//     }
+//     #logo path:nth-child(4) {
+//         stroke-width: 1;
+//         stroke-dasharray: 290;
+//         stroke-dashoffset: 290;
+//         animation: line-anim 2s ease forwards .9s;
+//     }
+//     #logo path:nth-child(5) {
+//         stroke-width: 1;
+//         stroke-dasharray: 187;
+//         stroke-dashoffset: 187;
+//         animation: line-anim 2s ease forwards 1.2s;
+//     }
+//     #logo path:nth-child(6) {
+//         stroke-width: 1;
+//         stroke-dasharray: 393;
+//         stroke-dashoffset: 393;
+//         animation: line-anim 2s ease forwards 1.5s;
+//     }
 
-    svg {
-        animation: fill .6s ease-in forwards 3s;
-    }
-}
+//     svg {
+//         animation: fill .6s ease-in forwards 3s;
+//     }
+// }
 
-@keyframes line-anim {
-    to {
-        stroke-dashoffset: 0;
-    }
-}
-@keyframes fill {
-    from {
-        fill: transparent;
-    }
-    to {
-        fill: $primary-color;
-    }
-}
+// @keyframes line-anim {
+//     to {
+//         stroke-dashoffset: 0;
+//     }
+// }
+// @keyframes fill {
+//     from {
+//         fill: transparent;
+//     }
+//     to {
+//         fill: $primary-color;
+//     }
+// }
 
 
-// cursor
+// // cursor
 
-.cursor {
-    width: 2rem;
-    height: 2rem;
-    border: 2.5px solid $white;
-    border-radius: 50%;
-    position: absolute;
-    top: -10rem;
-    left: -10rem;
-    pointer-events: none;
-    transform: translate(-50%, -50%);
-    transform-origin: 100% 100%;
-    transition: all .3s ease;
-    transition-property: background, transform;
+// .cursor {
+//     width: 2rem;
+//     height: 2rem;
+//     border: 2.5px solid $white;
+//     border-radius: 50%;
+//     position: absolute;
+//     top: -10rem;
+//     left: -10rem;
+//     pointer-events: none;
+//     transform: translate(-50%, -50%);
+//     transform-origin: 100% 100%;
+//     transition: all .3s ease;
+//     transition-property: background, transform;
 
-    @media only screen and (max-width: 62.5em) { // tab-land
-        opacity: 0;
-    }
-}
+//     @media only screen and (max-width: 62.5em) { // tab-land
+//         opacity: 0;
+//     }
+// }
+
 /*--------------------------
     typography
 ---------------------------*/
-.heading-2 {
-    font-size: 4rem;
-    letter-spacing: -1px;
+.heading {
+    &-2 {
+        font-size: 4rem;
+        letter-spacing: -1px;
+    }
+    &-3 {
+        font-size: 4rem;
+        text-transform: capitalize;
+        letter-spacing: -.5px;
+        line-height: 4rem;
+        font-family: $tertiary-font;
+    }
+    &-4 {
+        font-size: 2rem;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+    }
+    &-5 {
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+    }
 }
 
-.heading-3 {
-    font-size: 4rem;
-    text-transform: capitalize;
-    letter-spacing: -.5px;
-    line-height: 4rem;
-    font-family: $tertiary-font;
-}
-
-.heading-4 {
-    font-size: 2rem;
-
-    text-transform: uppercase;
-    letter-spacing: 5px;
-}
-
-.heading-5 {
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-}
 
 .paragraph {
     font-size: 1.8rem;
@@ -295,24 +293,35 @@ section {
     color: $black;
 }
 
-.mb-0 {
-    margin-bottom: 0rem;
+.mb {
+    &-0 {
+        margin-bottom: 0rem;
+    }
+    &-s {
+        margin-bottom: 1.3rem;
+    }
+    &-m {
+        margin-bottom: 3rem;
+    }
+    &-l {
+        margin-bottom: 5rem;
+    }
 }
-.mb-l {
-    margin-bottom: 5rem;
+.mt {
+    &-0 {
+        margin-top: 0rem;
+    }
+    &-s {
+        margin-top: 1rem;
+    }
+    &-m {
+        margin-top: 2rem;
+    }
+    &-l {
+        margin-top: 5rem;
+    }
 }
-.mb-m {
-    margin-bottom: 3rem;
-}
-.mb-s {
-    margin-bottom: 1.3rem;
-}
-.mt-s {
-    margin-top: 1rem;
-}
-.mt-m {
-    margin-top: 2rem;
-}
+
 
 .pb-l {
     padding-bottom: 1rem;
@@ -323,7 +332,6 @@ section {
 
 .grow { 
     transition: all .2s ease-in-out; 
-
     &:hover {
         transform: scale(1.1);
     }
@@ -334,7 +342,7 @@ section {
     transform: translate3d(0, 0, 0);
     backface-visibility: hidden;
     perspective: 1000px;
-  }
+}
 
 
 @keyframes shake {
@@ -353,17 +361,17 @@ section {
     40%, 60% {
       transform: translate3d(4px, 0, 0);
     }
-  }
+}
 
-  .quote {
+.quote {
     opacity: 0;
     transition: opacity 225ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  }
+}
 
-  .fade {
+.fade {
     opacity: 1;
     transition: opacity 300ms cubic-bezier(0.55, 0.085, 0.68, 0.53);
-  }
+}
 
 
   
