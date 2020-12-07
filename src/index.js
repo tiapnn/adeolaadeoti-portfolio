@@ -120,29 +120,16 @@ function onTransitionEnd() {
 }
 
 
-//message to all the developers out there
-const message = "Nice to see you around here! Send me a message if you want to reuse my portfolio template or you want explanations of any features! Cheers!" 
-console.group("Hey developer!")
-console.log(message)
-console.log("%cMattia P - tiapnn@yahoo.it", 'font-size:20px');
-console.groupEnd()
-
-
-
 //scroll anchor links fixed
-var switchView = function (hash = location.hash, adjust = 5) {
+var switchView = function (hash = location.hash, adjust = 350) {
 
     try {
+        var mobileView = window.matchMedia("(max-width: 426px)")
+        if (mobileView.matches) adjust = 250
         var elem = document.querySelector(hash);
-        var elemRect = elem.getBoundingClientRect(),
-            bodyRect = document.body.getBoundingClientRect(),
-            offset = elemRect.top - bodyRect.top;
-            console.log(elemRect, bodyRect, offset);
-        window.scroll({
-            top: offset,
-            behavior: 'smooth'
-        })
-    } catch (DOMException) {
+        var top = elem.offsetTop
+        window.scrollTo(0, top - adjust)
+    } catch (DOMException) {    
         location.hash = "";
     } 
 }
@@ -152,13 +139,19 @@ window.onhashchange = () => { switchView() }
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
-anchor.onclick = (e) => {
-
+    anchor.onclick = (e) => {
     var target = e.target;
-
     e.preventDefault()
     switchView(target.attributes.href.value)
     
-}
+    }
 })
+
+
+//message to all the developers out there
+const message = "Nice to see you around here! Send me a message if you want to reuse my portfolio template or you want explanations of any features! Cheers!" 
+console.group("Hey developer!")
+console.log(message)
+console.log("%cMattia P - tiapnn@yahoo.it", 'font-size:20px');
+console.groupEnd()
 
