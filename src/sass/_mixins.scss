@@ -7,7 +7,7 @@
 
 @mixin bgImg($url) {
   background-image: url($url);
-  background-position: center;
+  background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
 }

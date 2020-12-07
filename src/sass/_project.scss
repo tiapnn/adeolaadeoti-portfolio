@@ -43,10 +43,10 @@
             @include bgImg('/img/gif/canary.gif');
         }
         &:nth-child(2):before { 
-            @include bgImg('https://tiapnn.github.io/img/stoic%20gif.gif');
+            @include bgImg('/img/gif/pistasta.gif');
         }
         &:last-child:before { 
-            @include bgImg('https://tiapnn.github.io/img/pomodoro%20gif.gif');
+            @include bgImg('/img/gif/sofi.gif');
         }
         
             
