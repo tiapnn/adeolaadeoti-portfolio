@@ -127,4 +127,38 @@ console.log(message)
 console.log("%cMattia P - tiapnn@yahoo.it", 'font-size:20px');
 console.groupEnd()
 
-  
+
+
+//scroll anchor links fixed
+var switchView = function (hash = location.hash, adjust = 5) {
+
+    try {
+        var elem = document.querySelector(hash);
+        var elemRect = elem.getBoundingClientRect(),
+            bodyRect = document.body.getBoundingClientRect(),
+            offset = elemRect.top - bodyRect.top;
+            console.log(elemRect, bodyRect, offset);
+        window.scroll({
+            top: offset,
+            behavior: 'smooth'
+        })
+    } catch (DOMException) {
+        location.hash = "";
+    } 
+}
+
+document.addEventListener('DOMContentLoaded', () => { switchView() });
+window.onhashchange = () => { switchView() }
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+
+anchor.onclick = (e) => {
+
+    var target = e.target;
+
+    e.preventDefault()
+    switchView(target.attributes.href.value)
+    
+}
+})
+
