@@ -87,7 +87,7 @@ function getQuotes () {
 getQuotes()
 
 function shuffleQuotes(allQuotes) {
-    var randomQuote = getRandomQuote(allQuotes)
+    let randomQuote = getRandomQuote(allQuotes)
     toggleTransition()
     changeQuote(randomQuote)
 }
@@ -121,13 +121,13 @@ function onTransitionEnd() {
 
 
 //scroll anchor links fixed
-var switchView = function (hash = location.hash, adjust = 350) {
+let switchView = function (hash = location.hash, adjust = 350) {
 
     try {
-        var mobileView = window.matchMedia("(max-width: 426px)")
+        let mobileView = window.matchMedia("(max-width: 426px)")
         if (mobileView.matches) adjust = 250
-        var elem = document.querySelector(hash);
-        var top = elem.offsetTop
+        let elem = document.querySelector(hash);
+        let top = elem.offsetTop
         window.scrollTo(0, top - adjust)
     } catch (DOMException) {    
         location.hash = "";
@@ -140,7 +140,7 @@ window.onhashchange = () => { switchView() }
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
     anchor.onclick = (e) => {
-    var target = e.target;
+    let target = e.target;
     e.preventDefault()
     switchView(target.attributes.href.value)
     
