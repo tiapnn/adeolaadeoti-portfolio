@@ -11,6 +11,7 @@
     }
 
     &-box {
+        
         padding: 2rem;
         height: 35rem;
         display: flex;
@@ -21,30 +22,30 @@
         box-shadow: 0px 15px 15px $shadows;
         @include transitionEase(height); 
 
-        &:before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            filter: brightness(0.5);
+        &:hover {
+            color: transparent;
         }
 
-        &:hover:before, &:hover:focus {
-            filter: brightness(1);
-        }
-
-        &:first-child:before { 
+        &:first-child:hover { 
             @include bgImg('/img/gif/canary.gif');
         }
-        &:nth-child(2):before { 
+        &:nth-child(2):hover { 
             @include bgImg('/img/gif/pistasta.gif');
         }
-        &:last-child:before { 
+        &:last-child:hover { 
             @include bgImg('/img/gif/sofi.gif');
         }
-        
+
+        &:nth-child(1) {
+            background: linear-gradient(to bottom, #F3CBAB, #FEEDCA);
+        }
+        &:nth-child(2) {
+            background: linear-gradient(to bottom, #B1E5F9, #F4D2FE);
+        }
+        &:nth-child(3) {
+            background: linear-gradient(to bottom, #DBB4F3, #EFB7D7);
+        }
+
     }
 
     &-box__link {
@@ -65,14 +66,6 @@
         align-self: center;
         @include transitionEase(opacity); 
         z-index: 1;
-
-        h3, h5 {
-            background-color: $bgcolor;
-            padding: 15px;
-            padding-bottom: 10px;
-            border-radius: 15px;
-            width: fit-content;
-        }
     }
 }
 
