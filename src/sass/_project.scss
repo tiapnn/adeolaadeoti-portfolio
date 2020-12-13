@@ -42,7 +42,7 @@
         &:nth-child(3) {
             @include bgImg('/img/gif/sofi.gif');
             &:hover { 
-                background: linear-gradient(to bottom,#B3CD5C, #186d4a);
+                background: linear-gradient(to bottom,#B3CD5C, #e3ecc0);
             }
         }
 
@@ -63,9 +63,18 @@
     }
     
     &-box__content {
-        align-self: center;
-        @include transitionEase(opacity); 
-        z-index: 1;
+        height: 100%;
+        display: contents;
+        @include transitionEase(color); 
+        
+        a {
+            color: inherit;
+        }
+
+        i {
+            font-size: 3rem;
+            margin: 5px;
+        }
     }
 }
 
