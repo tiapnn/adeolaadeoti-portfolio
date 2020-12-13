@@ -20,30 +20,30 @@
         position: relative;
         cursor: pointer;
         box-shadow: 0px 15px 15px $shadows;
+        color: transparent;
         @include transitionEase(height); 
 
         &:hover {
-            color: transparent;
+            color: $black   ;
         }
-
-        &:first-child:hover { 
-            @include bgImg('/img/gif/canary.gif');
-        }
-        &:nth-child(2):hover { 
-            @include bgImg('/img/gif/pistasta.gif');
-        }
-        &:last-child:hover { 
-            @include bgImg('/img/gif/sofi.gif');
-        }
-
+        
         &:nth-child(1) {
-            background: linear-gradient(to bottom, #F3CBAB, #FEEDCA);
+            @include bgImg('/img/gif/canary.gif');
+            &:hover {
+                background: linear-gradient(to bottom, #B1E5F9, #F4D2FE);
+            }
         }
         &:nth-child(2) {
-            background: linear-gradient(to bottom, #B1E5F9, #F4D2FE);
+            @include bgImg('/img/gif/pistasta.gif');
+            &:hover { 
+                background: linear-gradient(to bottom, #DBB4F3, #EFB7D7);
+            }
         }
         &:nth-child(3) {
-            background: linear-gradient(to bottom, #DBB4F3, #EFB7D7);
+            @include bgImg('/img/gif/sofi.gif');
+            &:hover { 
+                background: linear-gradient(to bottom,#B3CD5C, #186d4a);
+            }
         }
 
     }
