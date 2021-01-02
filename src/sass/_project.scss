@@ -18,32 +18,17 @@
         flex-direction: column;
         justify-content: space-between;
         position: relative;
-        cursor: pointer;
         box-shadow: 0px 15px 15px $shadows;
-        color: transparent;
-        @include transitionEase(height); 
-
-        &:hover {
-            color: $black   ;
-        }
+        color: $black   ;
         
         &:nth-child(1) {
-            @include bgImg('/img/gif/canary.gif');
-            &:hover {
-                background: linear-gradient(to bottom, #B1E5F9, #F4D2FE);
-            }
+            background: linear-gradient(to bottom, #B1E5F9, #F4D2FE);
         }
         &:nth-child(2) {
-            @include bgImg('/img/gif/pistasta.gif');
-            &:hover { 
-                background: linear-gradient(to bottom, #DBB4F3, #EFB7D7);
-            }
+            background: linear-gradient(to bottom, #DBB4F3, #EFB7D7);    
         }
         &:nth-child(3) {
-            @include bgImg('/img/gif/sofi.gif');
-            &:hover { 
-                background: linear-gradient(to bottom,#B3CD5C, #e3ecc0);
-            }
+            background: linear-gradient(to bottom,#B3CD5C, #e3ecc0);
         }
 
     }
