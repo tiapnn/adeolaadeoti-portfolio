@@ -22,15 +22,14 @@
         color: $black   ;
         
         &:nth-child(1) {
-            background: linear-gradient(to bottom, #B1E5F9, #F4D2FE);
+            background-image: linear-gradient(135deg, #7bbef5 10%, #c9e6ab 100%);
         }
         &:nth-child(2) {
-            background: linear-gradient(to bottom, #DBB4F3, #EFB7D7);    
+            background-image: linear-gradient(135deg, #b0affa 10%, #f6d2da 100%);        
         }
         &:nth-child(3) {
-            background: linear-gradient(to bottom,#B3CD5C, #e3ecc0);
+            background-image: linear-gradient(135deg, #f690af 10%, #f6e05f 100%);        
         }
-
     }
 
     &-box__link {
