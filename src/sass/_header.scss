@@ -47,7 +47,7 @@
             z-index: 1;
             display: flex;
             .box {
-                background-color: $tertiary-color;
+                background-image: linear-gradient( #FFA8A8 10%, #FCFF00 100%);
                 width: calc(100vw / 4);
                 height: 0vh;
             }
