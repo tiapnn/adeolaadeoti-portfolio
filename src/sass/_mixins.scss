@@ -11,3 +11,8 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+@mixin flexCenter () {
+  display: flex;
+  align-items: center;
+}

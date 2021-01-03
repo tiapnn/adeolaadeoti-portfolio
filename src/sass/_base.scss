@@ -37,9 +37,9 @@ $tertiary-font: 'Calibre-Medium', sans-serif;
 
 //colors
 $primary-color: #EF9218;
-$secondary-color: #918D8D;
+$secondary-color: #756c6c;
 $tertiary-color: #FFEC3E;
-$pasta-color: #FEEACD;
+$menu-color: #c3bfbf;
 $white: #FFFFFF;
 $black: #000000;
 $bgcolor: #F5F5F5;
@@ -232,11 +232,12 @@ section {
         letter-spacing: -1px;
     }
     &-3 {
-        font-size: 4rem;
+        font-size: 3.5rem;
         text-transform: capitalize;
         letter-spacing: -.5px;
         line-height: 4rem;
         font-family: $tertiary-font;
+        text-shadow: 0px 15px 15px $shadows;
     }
     &-4 {
         font-size: 2rem;
@@ -268,15 +269,15 @@ section {
     color: $black;
     border-radius: 10rem;
     text-transform: uppercase;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     font-family: $secondary-font;
     letter-spacing: 3px;
     border: 1.5px solid transparent;
     cursor: pointer;
     transition: all .3s ease-in-out;
+    box-shadow: 0px 15px 15px $shadows;
     &:hover {
         background-color: $tertiary-color;
-        border: 1.5px solid $white;
     }
 }
 
@@ -344,6 +345,12 @@ section {
     backface-visibility: hidden;
     perspective: 1000px;
 }
+.shakyup {
+    animation: shakeup 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
 
 
 @keyframes shake {
@@ -361,6 +368,24 @@ section {
   
     40%, 60% {
       transform: translate3d(4px, 0, 0);
+    }
+}
+
+@keyframes shakeup {
+    10%, 90% {
+      transform: translate3d(0,-1px, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(0, 1px, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(0,-2px, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(0, 2px, 0);
     }
 }
 

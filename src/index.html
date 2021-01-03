@@ -56,9 +56,15 @@
                 <div class="box"></div>
                 <div class="box"></div>
             </div>
-            <img class="mobile-logo" height="65px" src="./img/png/penna.png" alt="penna logo mobile">
             <div class="nav-main__content">
-                <!-- first content -->
+                <div class="nav-main__content--box">
+                    <h4 class="heading-4 shadow-sec">navigation</h4>
+                    <ul class="list">
+                        <li class="list__item"><a href="#home" class="list__link">home</a></li>
+                        <li class="list__item"><a href="#projects" class="list__link">projects</a></li>
+                        <li class="list__item"><a href="#contact" class="list__link">contact</a></li>
+                    </ul>
+                </div>
                 <div class="nav-main__content--box">
                     <h4 class="heading-4 shadow-sec">Let's connect</h4>
                     <div class="social-links">
@@ -75,24 +81,9 @@
                     </figure>
                     
                 </div>
-                <!-- second content -->
-                <div class="nav-main__content--box">
-                    <h4 class="heading-4 shadow-sec">navigation</h4>
-                    <ul class="list">
-                        <li class="list__item"><a href="#home" class="list__link">home</a></li>
-                        <li class="list__item"><a href="#projects" class="list__link">projects</a></li>
-                        <li class="list__item"><a href="#contact" class="list__link">contact</a></li>
-                    </ul>
-                </div>
+
                 
             </div>
-        </nav>
-        <!-- nav sub -->
-        <nav class="nav-sub">
-            <picture>
-                <source media="(max-width:37.5em)" srcset="./img/png/penna.png">
-                <img src="./img/png/penna.png" height="65px" alt="penna logo">
-            </picture>
         </nav>
     </div>
 
@@ -103,8 +94,9 @@
                 <!-- hero -->
                 <div class="hero" >
                     <h5 class="heading-5">Hello there👋, I’m</h5>
-                    <div class="text-container">
-                        <span style="color: black; text-transform: capitalize;">Mattia</span>
+                    <div class="name-container">
+                        <span>Mattia</span>
+                        <img src="./img/png/penna.png" height="65px" alt="penna logo">
                     </div>
                     <h4 class="heading-4 pri-color mt-s mb-s">Junior Software Developer</h4>
                     <p class="paragraph mb-l">Italian programmer living in Valencia, Spain 🍝🥘<br>
@@ -119,12 +111,14 @@
                 <h5 class="heading-4 sec-color mb-s">My projects &mdash;</h5>
                 <div class="project-box__wrapper">
                     <div class="project-box">
-                        <div class="project-box__link">
-                            <a href="https://github.com/tiapnn/" target="_blank" rel="noopener noreferrer"><img class="grow" src="./img/svg/github.svg" alt="github logo"></a>
-                            <a href="https://canaryenjoy.com" target="_blank" rel="noopener noreferrer"><img class="grow" src="./img/svg/link.svg" alt="link icon"></a>
-                        </div>
                         <div class="project-box__content">
+                            <div class="project-box__content-title">
                             <h3 class="heading-3">Canary Enjoy</h3>
+                                <div class="project-box__link">
+                                    <a href="https://github.com/tiapnn/" target="_blank" rel="noopener noreferrer"><img class="grow" src="./img/svg/github.svg" alt="github logo"></a>
+                                    <a href="https://canaryenjoy.com" target="_blank" rel="noopener noreferrer"><img class="grow" src="./img/svg/link.svg" alt="link icon"></a>
+                                </div>
+                            </div>
                             <p>
                                 It's a free a cross platform mobile app made with Apache Cordova. The app also has with website, a "partners" section and a content management system.
                             </p>
@@ -146,12 +140,14 @@
                         </div>
                     </div>
                     <div class="project-box">
-                        <div class="project-box__link">
-                            <a href="https://github.com/essedi/" target="_blank" rel="noopener noreferrer"><img class="grow" src="./img/svg/github.svg" alt="github logo"></a>
-                            <a href="https://pistasta.it" target="_blank" rel="noopener noreferrer"><img class="grow" src="./img/svg/link.svg" alt="link icon"></a>
-                        </div>
                         <div class="project-box__content">
-                            <h3 class="heading-3">Pistasta, Sofí & Russo</h3>
+                            <div class="project-box__content-title">
+                            <h3 class="heading-3 longy">Pistasta, Sofí & Russo</h3>
+                                <div class="project-box__link">
+                                    <a href="https://github.com/essedi/" target="_blank" rel="noopener noreferrer"><img class="grow" src="./img/svg/github.svg" alt="github logo"></a>
+                                    <a href="https://pistasta.it" target="_blank" rel="noopener noreferrer"><img class="grow" src="./img/svg/link.svg" alt="link icon"></a>
+                                </div>
+                            </div>
                             <p>
                                 I developed 3 e-commerce websites all about the king of dry fruit: the Pistacchio!
                             </p>
@@ -173,12 +169,14 @@
                         </div>
                     </div>
                     <div class="project-box">
-                        <div class="project-box__link">
-                            <a href="https://github.com/tiapnn/pnzdevs-blog" target="_blank" rel="noopener noreferrer"><img class="grow" src="./img/svg/github.svg" alt="github logo"></a>
-                            <a href="https://pnzdevs.online" target="_blank" rel="noopener noreferrer"><img class="grow" src="./img/svg/link.svg" alt="link icon"></a>
-                        </div>
                         <div class="project-box__content">
-                            <h3 class="heading-3">PNZ Devs</h3>
+                            <div class="project-box__content-title">
+                                <h3 class="heading-3">PNZ Devs</h3>
+                                    <div class="project-box__link">
+                                        <a href="https://github.com/tiapnn/pnzdevs-blog" target="_blank" rel="noopener noreferrer"><img class="grow" src="./img/svg/github.svg" alt="github logo"></a>
+                                        <a href="https://pnzdevs.online" target="_blank" rel="noopener noreferrer"><img class="grow" src="./img/svg/link.svg" alt="link icon"></a>
+                                    </div>
+                            </div>
                             <p>
                                 Developed with ElevenTail, A project scaffold for quickly starting a site build with:
                             </p>
@@ -188,7 +186,7 @@
                                 <li><a href="https://www.purgecss.com/">PurgeCSS</a> for optimizing CSS output</li>
                                 <li><a href="https://www.npmjs.com/package/uglify-js">UglifyJS</a> for a simple JS build pipeline</li>
                             </ul>
-                            <h5>Check out the blog section! I post regulary about programming topics I'm working with</h5>
+                            <h5>Check out the blog section, I post regulary about programming topics I'm working with!</h5>
                         
                             <div class="icos-container">    
                                 <i class="devicon-javascript-plain"></i>
@@ -205,23 +203,23 @@
             <section id="achievements" class="achievements">
                 <h5 class="heading-4 sec-color mb-s">My archivements &mdash;</h5>
                 <div class="achievements-box__wrapper">
-                    <div class="achievements-box">
-                        <a href="https://www.freecodecamp.org/certification/tiapnn/full-stack" target="_blank">
-                        <h3 class="heading-3 mb-0">freeCodeCamp</h3>
-                        <p class="paragraph mb-s">I had the pleasure to finish the most complete online bootcamp. <strong>1800hs</strong> of coursework</p>
-                        </a>
+                    <div class="achievements-box"> 
+                        <h3 class="heading-3 mb-0">freeCodeCamp 🎓</h3>
+                        <p class="paragraph mb-s">I had the pleasure to finish the most complete online bootcamp. <strong style="color:black">~ 1800hs</strong> of coursework for my <strong><a href="https://www.freecodecamp.org/certification/tiapnn/full-stack" target="_blank">Full-Stack Certification</a></strong>
+                        </p>
+                       
                         <ul>
-                            <li>✅ Responsive Web Design Certification</li>
-                            <li>✅ JavaScript Algorithms and Data Structures Certification</li>
-                            <li>✅ Front End Libraries Certification</li>
-                            <li>✅ Data Visualization Certification</li>
-                            <li>✅ APIs and Microservices Certification</li>
-                            <li>✅ Quality Assurance Certification</li>
+                            <li>✅ <a href="https://www.freecodecamp.org/certification/tiapnn/responsive-web-design" target="_blank"> Responsive Web Design Certification</a></li>
+                            <li>✅ <a href="https://www.freecodecamp.org/certification/tiapnn/javascript-algorithms-and-data-structures" target="_blank"> JavaScript Algorithms and Data Structures Certification</a></li>
+                            <li>✅<a href="https://www.freecodecamp.org/certification/tiapnn/front-end-libraries" target="_blank"> Front End Libraries Certification</a> </li>
+                            <li>✅<a href="https://www.freecodecamp.org/certification/tiapnn/data-visualization" target="_blank"> Data Visualization Certification</a> </li>
+                            <li>✅<a href="https://www.freecodecamp.org/certification/tiapnn/apis-and-microservices" target="_blank"> APIs and Microservices Certification</a> </li>
+                            <li>✅<a href="https://www.freecodecamp.org/certification/tiapnn/information-security-and-quality-assurance" target="_blank">  Quality Assurance Certification</a></li>
                         </ul>
                     </div>
                     <div href="https://profile.codersrank.io/user/tiapnn" target="_blank" class="achievements-box">
                         <h3 class="heading-3 mb-0">CodersRank</h3>
-                        <p class="paragraph mb-s">Let's get real here, we all love stats</p>
+                        <p class="paragraph mb-s">Don't we all love stats?</p>
                         <codersrank-widget username="tiapnn" layout="horizontal" badges="3"></codersrank-widget>
                     </div>
                 </div>

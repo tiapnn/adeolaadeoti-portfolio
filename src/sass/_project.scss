@@ -33,15 +33,9 @@
     }
 
     &-box__link {
-        align-self: flex-end;
-        width: 20%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        z-index: 1;
-
-        @media only screen and (max-width: 56.25em) { // tab-port
-            width: 30%;
+        a {
+            margin: 10px;
+            white-space: nowrap;
         }
 
     }
@@ -58,6 +52,23 @@
         i {
             font-size: 3rem;
             margin: 5px;
+        }
+
+        &-title {
+            h3 {
+                max-width: 180px;
+            }
+            h3.longy {
+                @media (max-width: $bp-mobile) {
+                    max-width: 140px;
+
+                }
+            }
+
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
     }
 }

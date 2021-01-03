@@ -5,7 +5,7 @@
     top: 0;
     left: 0;
     .nav-icon {
-        background-color: $secondary-color;
+        background-color: $menu-color;
         position: absolute;
         right: 4rem;
         top: 2.5rem;
@@ -19,7 +19,9 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-
+        &:focus, &:active {
+            outline: none;
+        }
 
         .bar1, .bar2, .bar3 {
             width: 20px;
@@ -70,7 +72,7 @@
             visibility: hidden;
             width: 95vw;
             position: absolute;
-            top: 15rem;
+            top: 10rem;
             left: 4rem;
             z-index: 2;
             display: grid;
@@ -80,6 +82,7 @@
             color: $black;
 
             &--box {
+                margin-bottom: 50px;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
@@ -92,7 +95,7 @@
                         align-items: center;
                         img {
                             margin-right: 2rem;
-                            height: 2.7rem;
+                            height: 3.5rem;
                             filter: brightness(1%);
                         }
 
@@ -159,7 +162,7 @@
         right: 0;
         z-index: -1;
         background: url('../img/svg/home-bg.svg') 90% 0 no-repeat;
-        @media (max-width: $bp-mobile) {
+        @media (max-width: $bp-tablet) {
             filter: opacity(0.06);
         }
     }
@@ -187,36 +190,18 @@
 
 
 
-// text video
-.text-container {
-    width: 25rem;
-    position: relative;
-    overflow: hidden;
-    height: 10rem;
-    margin: 1rem 0 1rem -2rem;
-
-    video {
-        position: absolute;
-        top: 0;
-        width: 24rem;
-        height: 10rem;
-    }
-
-    svg {
-        position: absolute;
-        top: -1rem;
-        left: -.75rem;
-        width: 27rem;
-    }
-
+.name-container {
+    @include flexCenter;
+    padding-top: 20px;
     span {
         font-size: 8rem;
-        color: rgba(255, 255, 255, 0);
-        text-transform: lowercase;
+        text-transform: capitalize;
         font-family: $secondary-font;
-        position: absolute;
-        top: 1.5rem;
-        left: 1.5rem;
+        text-shadow: 0px 15px 15px $shadows
+    }
+    img {
+        margin-left: 15px;
+        margin-bottom: 10px;
     }
 }
   

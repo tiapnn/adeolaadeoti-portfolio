@@ -65,8 +65,7 @@
             }
 
             &:hover {
-                filter: sepia(1);
-
+                color: $black;
             }
 
         }
@@ -75,10 +74,10 @@
             font-size: 2.5rem;
             font-weight: 600;
             display: block;
-            color: $secondary-color;
+            color: $black;
 
             &:hover {
-                filter: sepia(1);
+                @extend .shaky;
             }
         }
 
