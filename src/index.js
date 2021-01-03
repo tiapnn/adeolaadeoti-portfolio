@@ -15,7 +15,7 @@ import '/sass/main.scss';
 // navigation
 const tl = gsap.timeline({paused:true, reversed: true});
 tl.to('.box', {height: '100vh', duration: .3, transformOrigin: 'bottom', stagger: .2})
-tl.to('.mobile-logo', {opacity: '1'})
+tl.to('.mobile-logo', {opacity: '1', duration: .5})
 tl.to('.nav-main__content', {opacity: '1', visibility: 'visible', yPercent: -5, duration: .3, transformOrigin: 'bottom', stagger: .2})
 
 const navIcon = document.querySelector('.nav-icon');
