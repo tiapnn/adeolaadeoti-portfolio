@@ -134,5 +134,6 @@ const message = "Nice to see you around here! Send me a message if you want to r
 console.group("Hey developer!")
 console.log(message)
 console.log("%cMattia P - tiapnn@yahoo.it", 'font-size:20px');
+console.log("%c🍝🥘", 'font-size:100px');
 console.groupEnd()
 
