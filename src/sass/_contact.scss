@@ -1,101 +1,100 @@
 .contact {
-    grid-column: 2/14;
-    padding: 6rem;
-    
-    &-box__wrapper {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-        grid-gap: 4rem;
-        color: $secondary-color;
-        margin-top: 6rem;
-        margin-bottom: 3rem;
-        
-        @include bgImg("/img/png/map.png");
-        background-size: cover;
-    }
-    
-    &-box {
-        margin: 70px auto -50px;
-        height: 100%;
-        width: 90%;
-        padding: 1rem;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        flex-wrap: wrap;
-        box-shadow: 0px 15px 15px #00000029;
-        position: relative;
+  grid-column: 2/14;
+  padding: 6rem;
 
-        &::before {
-            content: "";
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            right: 0;
-            background-image: linear-gradient(135deg, #fbeedb 10%, #fdc0ac 100%);        }
+  &-box__wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-gap: 4rem;
+    color: $secondary-color;
+    margin-top: 6rem;
+    margin-bottom: 3rem;
 
-        @media (max-width: $bp-mobile) {
-            text-align: center;
-        }
-        
-        h2 {
-            color: $black;
-        }
+    @include bgImg("/img/png/map.png");
+    background-size: cover;
+  }
 
-        q {
-            color: $black;
-            font-size: 2rem;
-            margin: 15px;
-            font-style: italic;
-            text-shadow: 0px 15px 15px #00000029;
-            &::after, &::before {
-                content: none;
-            }
-        }   
+  &-box {
+    margin: 70px auto -50px;
+    height: 100%;
+    width: 90%;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: 0px 15px 15px #00000029;
+    position: relative;
 
-        .anchors {
-            text-decoration: none;
-            color: $secondary-color;
-            font-size: 2rem;
-            
-            a {
-                margin-right: 10px;
-                filter: brightness(0);
-            }
-
-            &:hover {
-                color: $black;
-            }
-
-        }
-
-        .mailz {
-            font-size: 2.5rem;
-            font-weight: 600;
-            display: block;
-            color: $black;
-
-            &:hover {
-                @extend .shakyup;
-            }
-        }
-
-        .img-container {
-            @include bgImg("/img/png/me.png");
-            height: 16rem;
-            width: 16rem;
-            border: 2px solid $white;
-            border-radius: 50%;
-            box-shadow: 0px 15px 15px $shadows;
-        }
-
-        &-col {
-            max-width: 270px;
-            padding: 25px 15px;
-            z-index: 1;
-        }
-
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      right: 0;
+      background-image: linear-gradient(135deg, #fbeedb 10%, #fdc0ac 100%);
     }
 
+    @media (max-width: $bp-mobile) {
+      text-align: center;
+    }
+
+    h2 {
+      color: $black;
+    }
+
+    q {
+      color: $black;
+      font-size: 2rem;
+      margin: 15px;
+      font-style: italic;
+      text-shadow: 0px 15px 15px #00000029;
+      &::after,
+      &::before {
+        content: none;
+      }
+    }
+
+    .anchors {
+      text-decoration: none;
+      color: $secondary-color;
+      font-size: 2rem;
+
+      a {
+        margin-right: 10px;
+        filter: brightness(0);
+      }
+
+      &:hover {
+        color: $black;
+      }
+    }
+
+    .mailz {
+      font-size: 2.5rem;
+      font-weight: 600;
+      display: block;
+      color: $black;
+
+      &:hover {
+        @extend .shakyup;
+      }
+    }
+
+    .img-container {
+      @include bgImg("/img/png/me.png");
+      height: 16rem;
+      width: 16rem;
+      border: 2px solid $white;
+      border-radius: 50%;
+      box-shadow: 0px 15px 15px $shadows;
+    }
+
+    &-col {
+      max-width: 270px;
+      padding: 25px 15px;
+      z-index: 1;
+    }
+  }
 }

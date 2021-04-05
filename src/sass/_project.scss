@@ -1,75 +1,70 @@
 .project {
-    grid-column: 2/14;
-    padding: 6rem;
+  grid-column: 2/14;
+  padding: 6rem;
 
-    &-box__wrapper {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-        grid-gap: 4rem;
-        color: $black;
-        margin-top: 6rem;
+  &-box__wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-gap: 4rem;
+    color: $black;
+    margin-top: 6rem;
+  }
+
+  &-box {
+    padding: 2rem;
+    height: 35rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    box-shadow: 0px 15px 15px $shadows;
+    color: $black;
+
+    &:nth-child(1) {
+      background-image: linear-gradient(135deg, #7bbef5 10%, #c9e6ab 100%);
+    }
+    &:nth-child(2) {
+      background-image: linear-gradient(135deg, #b0affa 10%, #f6d2da 100%);
+    }
+    &:nth-child(3) {
+      background-image: linear-gradient(135deg, #f690af 10%, #f6e05f 100%);
+    }
+  }
+
+  &-box__link {
+    a {
+      margin: 10px;
+      white-space: nowrap;
+    }
+  }
+
+  &-box__content {
+    height: 100%;
+    display: contents;
+    @include transitionEase(color);
+
+    a {
+      color: inherit;
     }
 
-    &-box {
-        
-        padding: 2rem;
-        height: 35rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        position: relative;
-        box-shadow: 0px 15px 15px $shadows;
-        color: $black   ;
-        
-        &:nth-child(1) {
-            background-image: linear-gradient(135deg, #7bbef5 10%, #c9e6ab 100%);
-        }
-        &:nth-child(2) {
-            background-image: linear-gradient(135deg, #b0affa 10%, #f6d2da 100%);        
-        }
-        &:nth-child(3) {
-            background-image: linear-gradient(135deg, #f690af 10%, #f6e05f 100%);        
-        }
+    i {
+      font-size: 3rem;
+      margin: 5px;
     }
 
-    &-box__link {
-        a {
-            margin: 10px;
-            white-space: nowrap;
+    &-title {
+      h3 {
+        max-width: 180px;
+      }
+      h3.longy {
+        @media (max-width: $bp-mobile) {
+          max-width: 140px;
         }
+      }
 
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
     }
-    
-    &-box__content {
-        height: 100%;
-        display: contents;
-        @include transitionEase(color); 
-        
-        a {
-            color: inherit;
-        }
-
-        i {
-            font-size: 3rem;
-            margin: 5px;
-        }
-
-        &-title {
-            h3 {
-                max-width: 180px;
-            }
-            h3.longy {
-                @media (max-width: $bp-mobile) {
-                    max-width: 140px;
-
-                }
-            }
-
-
-            display: flex;
-            justify-content: space-between;
-            align-items: end;
-        }
-    }
+  }
 }
-

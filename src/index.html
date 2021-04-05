@@ -1,38 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mattia Penna &mdash; Portfolio</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="img/png/favicon.png">
-    <meta name="theme-color" content="#ffffff">
-    <meta name="description" content="Mattia Penna Portfolio">
-    <meta name="Keywords" content="Mattia Penna, Portfolio, Full-Stack Developer, Developer, Software Developer, Valencia, Spain">
-    <meta name="robots" content="index, follow">
-    <meta name="author" content="Mattia Penna">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/png/favicon.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="description" content="Mattia Penna Portfolio" />
+    <meta
+      name="Keywords"
+      content="Mattia Penna, Portfolio, Full-Stack Developer, Developer, Software Developer, Valencia, Spain"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Mattia Penna" />
     <!--w -->
-    <meta property="og:site_name" content="tiapnn.netlify.app">
-    <meta property="og:title" content="Mattia Penna Portfolio">
-    <meta property="og:description" content="Italian software developer living in Valencia, Spain. I love to code!">
-    <meta property="og:image" itemprop="image" content="img/png/me.png">
-    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="tiapnn.netlify.app" />
+    <meta property="og:title" content="Mattia Penna Portfolio" />
+    <meta
+      property="og:description"
+      content="Italian software developer living in Valencia, Spain. I love to code!"
+    />
+    <meta property="og:image" itemprop="image" content="img/png/me.png" />
+    <meta property="og:type" content="website" />
 
     <!-- link to devicons -->
-    <link rel="stylesheet" href="devicons/devicon.min.css">
+    <link rel="stylesheet" href="devicons/devicon.min.css" />
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-D4QT76CBH6"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-D4QT76CBH6"
+    ></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-        gtag('config', 'G-D4QT76CBH6');
+      gtag("config", "G-D4QT76CBH6");
     </script>
-
-</head>
-<body>
-    
+  </head>
+  <body>
     <!-- preloader -->
     <!-- <div class="preloader">
         <h1 style="color: blanchedalmond;">Nice to see you here! Welcome</h1>
@@ -43,270 +57,553 @@
     <!-- <div class="cursor"></div> -->
 
     <div class="nav-container">
-        <div class="nav-icon">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
+      <div class="nav-icon">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+      <!-- nav main -->
+      <nav class="nav-main">
+        <div class="box-wrapper">
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
         </div>
-        <!-- nav main -->
-        <nav class="nav-main">
-            <div class="box-wrapper">
-                <div class="box"></div>
-                <div class="box"></div>
-                <div class="box"></div>
-                <div class="box"></div>
+        <div class="nav-main__content">
+          <div class="nav-main__content--box">
+            <h4 class="heading-4 shadow-sec">navigation</h4>
+            <ul class="list">
+              <li class="list__item">
+                <a href="#home" class="list__link">home</a>
+              </li>
+              <li class="list__item">
+                <a href="#projects" class="list__link">projects</a>
+              </li>
+              <li class="list__item">
+                <a href="#contact" class="list__link">contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="nav-main__content--box">
+            <h4 class="heading-4 shadow-sec">Let's connect</h4>
+            <div class="social-links">
+              <div class="social-links--box">
+                <a
+                  href="https://github.com/tiapnn"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><img class="grow" src="./img/svg/github.svg" alt="github"
+                /></a>
+                <a
+                  href="https://codepen.io/tiapnn"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><img class="grow" src="./img/svg/codepen.svg" alt="codepen"
+                /></a>
+                <a
+                  href="https://www.linkedin.com/in/tiapnn/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><img
+                    class="grow"
+                    src="./img/svg/linkedin.svg"
+                    alt="linkedin"
+                /></a>
+              </div>
             </div>
-            <div class="nav-main__content">
-                <div class="nav-main__content--box">
-                    <h4 class="heading-4 shadow-sec">navigation</h4>
-                    <ul class="list">
-                        <li class="list__item"><a href="#home" class="list__link">home</a></li>
-                        <li class="list__item"><a href="#projects" class="list__link">projects</a></li>
-                        <li class="list__item"><a href="#contact" class="list__link">contact</a></li>
-                    </ul>
-                </div>
-                <div class="nav-main__content--box">
-                    <h4 class="heading-4 shadow-sec">Let's connect</h4>
-                    <div class="social-links">
-                        <div class="social-links--box">
-                            <a href="https://github.com/tiapnn" target="_blank"><img class="grow" src="./img/svg/github.svg" alt="github"></a>
-                            <a href="https://codepen.io/tiapnn" target="_blank"><img class="grow" src="./img/svg/codepen.svg" alt="codepen"></a>
-                            <a href="https://www.linkedin.com/in/tiapnn/" target="_blank"><img class="grow" src="./img/svg/linkedin.svg" alt="linkedin"></a>
-                        </div>
-                    </div>
-                    <figure class="resume">
-                        <a href="https://drive.google.com/file/d/1x2qbRz2ozBDA_fFQkLM-xvRtyDM35Opj/view" target="_blank" rel="noopener noreferrer">
-                            <img class="grow" src="./img/svg/cv.svg" alt="resume">
-                        </a>
-                    </figure>
-                    
-                </div>
-
-                
-            </div>
-        </nav>
+            <figure class="resume">
+              <a
+                href="https://drive.google.com/file/d/1x2qbRz2ozBDA_fFQkLM-xvRtyDM35Opj/view"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img class="grow" src="./img/svg/cv.svg" alt="resume" />
+              </a>
+            </figure>
+          </div>
+        </div>
+      </nav>
     </div>
 
     <div class="smooth-scroll-wrapper">
-        <section class="content">
-            <!-- header -->
-            <header id="home" class="header">
-                <!-- hero -->
-                <div class="hero" >
-                    <h5 class="heading-5">Hello there👋, I’m</h5>
-                    <div class="name-container">
-                        <span>Mattia</span>
-                        <img src="./img/png/penna.png" height="65px" alt="penna logo">
-                    </div>
-                    <h4 class="heading-4 pri-color mt-s mb-s">Junior Software Developer</h4>
-                    <p class="paragraph mb-l">Italian programmer living in Valencia, Spain 🍝🥘<br>
-                        I love to code! 💻 Drop me a line if I can be of help!</p>
-                    <a class="cta" href="https://drive.google.com/file/d/11-Rkj3Jbf7bk_6i7Do2rkCSM5RQKj-Bm/view?usp=sharing" target="_blank" rel="noopener noreferrer">Check out my CV!</a>
+      <section class="content">
+        <!-- header -->
+        <header id="home" class="header">
+          <!-- hero -->
+          <div class="hero">
+            <h5 class="heading-5">Hello there👋, I’m</h5>
+            <div class="name-container">
+              <span>Mattia</span>
+              <img src="./img/png/penna.png" height="65px" alt="penna logo" />
+            </div>
+            <h4 class="heading-4 pri-color mt-s mb-s">
+              Junior Software Developer
+            </h4>
+            <p class="paragraph mb-l">
+              Italian programmer living in Valencia, Spain 🍝🥘<br />
+              I love to code! 💻 Drop me a line if I can be of help!
+            </p>
+            <a
+              class="cta"
+              href="https://drive.google.com/file/d/11-Rkj3Jbf7bk_6i7Do2rkCSM5RQKj-Bm/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Check out my CV!</a
+            >
+          </div>
+        </header>
+
+        <!-- project section -->
+        <section id="projects" class="project">
+          <h5 class="heading-4 sec-color mb-s">My projects &mdash;</h5>
+          <div class="project-box__wrapper">
+            <div class="project-box">
+              <div class="project-box__content">
+                <div class="project-box__content-title">
+                  <h3 class="heading-3 longy">Android & iOS Apps</h3>
+                  <div class="project-box__link">
+                    <a
+                      href="https://github.com/tiapnn/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      ><img
+                        class="grow"
+                        src="./img/svg/github.svg"
+                        alt="github logo"
+                    /></a>
+                    <a
+                      href="https://canaryenjoy.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      ><img
+                        class="grow"
+                        src="./img/svg/link.svg"
+                        alt="link icon"
+                    /></a>
+                  </div>
                 </div>
-            </header>
-
-            <!-- project section -->
-            <section id="projects" class="project">
-
-                <h5 class="heading-4 sec-color mb-s">My projects &mdash;</h5>
-                <div class="project-box__wrapper">
-                    <div class="project-box">
-                        <div class="project-box__content">
-                            <div class="project-box__content-title">
-                            <h3 class="heading-3 longy">Android & iOS Apps</h3>
-                                <div class="project-box__link">
-                                    <a href="https://github.com/tiapnn/" target="_blank" rel="noopener noreferrer"><img class="grow" src="./img/svg/github.svg" alt="github logo"></a>
-                                    <a href="https://canaryenjoy.com" target="_blank" rel="noopener noreferrer"><img class="grow" src="./img/svg/link.svg" alt="link icon"></a>
-                                </div>
-                            </div>
-                            <p>
-                                Development of 3 cross platform mobile apps made with Apache Cordova.
-                            </p>
-                            <ul style="padding-left: 20px;">
-                                <li><a href="https://play.google.com/store/apps/details?id=online.pnzdevs.canaryapp">Canary Enjoy</a></li>
-                                <li><a href="https://play.google.com/store/apps/details?id=online.pnzdevs.gabbeach">Gabbeach App</a> (in development)</li>
-                                <li><a href="https://play.google.com/store/apps/details?id=online.pnzdevs.alicante">Pensione Alicante App</a> (in development)</li>
-                            </ul>
-                            <p>
-                                Developed together with <a href="https://github.com/andreapozza" target="_blank" rel="noopener noreferrer">Andrea Pozza</a> & <a href="https://github.com/czecca" target="_blank" rel="noopener noreferrer">Cristian Zecca</a>.
-                            </p>
-                            <div class="icos-container">    
-                                <i class="devicon-android-plain"></i>
-                                <i class="devicon-apple-original"></i>
-                                <i class="devicon-apache-line-wordmark"></i>
-                                <i class="devicon-mysql-plain"></i>
-                                <i class="devicon-php-plain"></i>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="project-box">
-                        <div class="project-box__content">
-                            <div class="project-box__content-title">
-                            <h3 class="heading-3 longy">E-commerce websites</h3>
-                                <div class="project-box__link">
-                                    <a href="https://github.com/essedi/" target="_blank" rel="noopener noreferrer"><img class="grow" src="./img/svg/github.svg" alt="github logo"></a>
-                                    <a href="https://pistasta.it" target="_blank" rel="noopener noreferrer"><img class="grow" src="./img/svg/link.svg" alt="link icon"></a>
-                                </div>
-                            </div>
-                            <p>
-                                Development and maintenance of 3 e-commerce websites powerded by <a href="https://codeigniter.com/">CodeIgniter</a>, a powerful PHP framework with a very small footprint:
-                            </p>
-                            <ul style="padding-left: 20px;">
-
-                                <li><a href="https://pistasta.it" target="_blank" rel="noopener noreferrer">pistasta.it</a></li>
-                                <li><a href="https://sicilyprodottitipici.it" target="_blank" rel="noopener noreferrer">sicilyprodottitipici.it</a></li>
-                                <li><a href="https://donocasion.es" target="_blank" rel="noopener noreferrer">donocasion.es</a></li>
-
-                            </ul>
-                            <p>
-                                Developed for <a href="https://essedi.es/" target="_blank" rel="noopener noreferrer">Essedi IT Consulting</a>.
-                            </p>
-                            <div class="icos-container">    
-                                <i class="devicon-php-plain"></i>
-                                <i class="devicon-codeigniter-plain"></i>
-                                <i class="devicon-composer-line"></i>
-                                <i class="devicon-mysql-plain"></i>
-                                <i class="devicon-sass-plain"></i>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="project-box">
-                        <div class="project-box__content">
-                            <div class="project-box__content-title">
-                                <h3 class="heading-3 longy">Blogs & Landings</h3>
-                                    <div class="project-box__link">
-                                        <a href="https://github.com/tiapnn/pnzdevs-blog" target="_blank" rel="noopener noreferrer"><img class="grow" src="./img/svg/github.svg" alt="github logo"></a>
-                                        <a href="https://pnzdevs.online" target="_blank" rel="noopener noreferrer"><img class="grow" src="./img/svg/link.svg" alt="link icon"></a>
-                                    </div>
-                            </div>
-                            <p>
-                                Development of 2 blogs and this portfolio. Used Node, <a href="https://nuxtjs.org/">Nuxt js (vue)</a> & Webpack:
-                            </p>
-                            <ul style="padding-left: 20px;">
-                                <li><a href="http://ambidestro.it">ambidestro.it</a></li>
-                                <li><a href="https://pnzdevs.online">pnzdevs.online</a></li>
-                                <li><a href="https://tiapnn.netlify.app/">tiapnn.netlify.app</a></li>
-                            </ul>
-                            <h5>Check out my blog posts! I post regulary about programming and other topics I'm working with!</h5>
-                        
-                            <div class="icos-container">
-                                <i class="devicon-nodejs-plain"></i>
-                                <i class="devicon-vuejs-plain"></i>
-                                <i class="devicon-webpack-plain"></i>
-                                <i class="devicon-javascript-plain"></i>
-                                <i class="devicon-npm-original-wordmark"></i>
-                            </div>
-                        </div>
-                    </div>
+                <p>
+                  Development of 3 cross platform mobile apps made with Apache
+                  Cordova.
+                </p>
+                <ul style="padding-left: 20px">
+                  <li>
+                    <a
+                      href="https://play.google.com/store/apps/details?id=online.pnzdevs.canaryapp"
+                      rel="noopener noreferrer"
+                      >Canary Enjoy</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://play.google.com/store/apps/details?id=online.pnzdevs.gabbeach"
+                      rel="noopener noreferrer"
+                      >Gabbeach App</a
+                    >
+                    (in development)
+                  </li>
+                  <li>
+                    <a
+                      href="https://play.google.com/store/apps/details?id=online.pnzdevs.alicante"
+                      rel="noopener noreferrer"
+                      >Pensione Alicante App</a
+                    >
+                    (in development)
+                  </li>
+                </ul>
+                <p>
+                  Developed together with
+                  <a
+                    href="https://github.com/andreapozza"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Andrea Pozza</a
+                  >
+                  &
+                  <a
+                    href="https://github.com/czecca"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Cristian Zecca</a
+                  >.
+                </p>
+                <div class="icos-container">
+                  <i class="devicon-android-plain"></i>
+                  <i class="devicon-apple-original"></i>
+                  <i class="devicon-apache-line-wordmark"></i>
+                  <i class="devicon-mysql-plain"></i>
+                  <i class="devicon-php-plain"></i>
                 </div>
-            </section>
-
-            <!-- achievements section -->
-            <section id="achievements" class="achievements">
-                <h5 class="heading-4 sec-color mb-s">My archivements &mdash;</h5>
-                <div class="achievements-box__wrapper">
-                    <div class="achievements-box"> 
-                        <h3 class="heading-3 mb-0">freeCodeCamp 🎓</h3>
-                        <p class="paragraph mb-s">I had the pleasure to finish the most complete online bootcamp. <strong style="color:black">~ 1800hs</strong> of coursework for my <strong><a href="https://www.freecodecamp.org/certification/tiapnn/full-stack" target="_blank">Full-Stack Certification.</a></strong>
-                        </p>
-                       
-                        <ul>
-                            <li>✅ <a href="https://www.freecodecamp.org/certification/tiapnn/responsive-web-design" target="_blank"> Responsive Web Design Certification</a></li>
-                            <li>✅ <a href="https://www.freecodecamp.org/certification/tiapnn/javascript-algorithms-and-data-structures" target="_blank"> JavaScript Algorithms and Data Structures Certification</a></li>
-                            <li>✅<a href="https://www.freecodecamp.org/certification/tiapnn/front-end-libraries" target="_blank"> Front End Libraries Certification</a> </li>
-                            <li>✅<a href="https://www.freecodecamp.org/certification/tiapnn/data-visualization" target="_blank"> Data Visualization Certification</a> </li>
-                            <li>✅<a href="https://www.freecodecamp.org/certification/tiapnn/apis-and-microservices" target="_blank"> APIs and Microservices Certification</a> </li>
-                            <li>✅<a href="https://www.freecodecamp.org/certification/tiapnn/information-security-and-quality-assurance" target="_blank">  Quality Assurance Certification</a></li>
-                        </ul>
-                    </div>
-                    <div href="https://profile.codersrank.io/user/tiapnn" target="_blank" class="achievements-box">
-                        <h3 class="heading-3 mb-0">CodersRank</h3>
-                        <p class="paragraph mb-s">Don't we all love stats?</p>
-                        <codersrank-widget username="tiapnn" layout="horizontal" badges="3"></codersrank-widget>
-                    </div>
-                    <div class="achievements-box"> 
-                        <h3 class="heading-3 mb-0">10fastfingers</h3>
-                        <p class="paragraph mb-s">Think fast, type faster.</p>
-                        <a href="https://10fastfingers.com/typing-test/english"><img src="http://img.10fastfingers.com/badge/typing-test_1_CD.png" alt="Typing Test" style="width: 100%;"/></a>
-                    </div>
+              </div>
+            </div>
+            <div class="project-box">
+              <div class="project-box__content">
+                <div class="project-box__content-title">
+                  <h3 class="heading-3 longy">E-commerce websites</h3>
+                  <div class="project-box__link">
+                    <a
+                      href="https://github.com/essedi/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      ><img
+                        class="grow"
+                        src="./img/svg/github.svg"
+                        alt="github logo"
+                    /></a>
+                    <a
+                      href="https://pistasta.it"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      ><img
+                        class="grow"
+                        src="./img/svg/link.svg"
+                        alt="link icon"
+                    /></a>
+                  </div>
                 </div>
-            </section>
+                <p>
+                  Development and maintenance of 3 e-commerce websites powerded
+                  by
+                  <a href="https://codeigniter.com/" rel="noopener noreferrer"
+                    >CodeIgniter</a
+                  >, a powerful PHP framework with a very small footprint:
+                </p>
+                <ul style="padding-left: 20px">
+                  <li>
+                    <a
+                      href="https://pistasta.it"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >pistasta.it</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://sicilyprodottitipici.it"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >sicilyprodottitipici.it</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://donocasion.es"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >donocasion.es</a
+                    >
+                  </li>
+                </ul>
+                <p>
+                  Developed for
+                  <a
+                    href="https://essedi.es/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Essedi IT Consulting</a
+                  >.
+                </p>
+                <div class="icos-container">
+                  <i class="devicon-php-plain"></i>
+                  <i class="devicon-codeigniter-plain"></i>
+                  <i class="devicon-composer-line"></i>
+                  <i class="devicon-mysql-plain"></i>
+                  <i class="devicon-sass-plain"></i>
+                </div>
+              </div>
+            </div>
+            <div class="project-box">
+              <div class="project-box__content">
+                <div class="project-box__content-title">
+                  <h3 class="heading-3 longy">Blogs & Landings</h3>
+                  <div class="project-box__link">
+                    <a
+                      href="https://github.com/tiapnn/pnzdevs-blog"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      ><img
+                        class="grow"
+                        src="./img/svg/github.svg"
+                        alt="github logo"
+                    /></a>
+                    <a
+                      href="https://pnzdevs.online"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      ><img
+                        class="grow"
+                        src="./img/svg/link.svg"
+                        alt="link icon"
+                    /></a>
+                  </div>
+                </div>
+                <p>
+                  Development of 2 blogs and this portfolio. Used Node,
+                  <a href="https://nuxtjs.org/" rel="noopener noreferrer"
+                    >Nuxt js (vue)</a
+                  >
+                  & Webpack:
+                </p>
+                <ul style="padding-left: 20px">
+                  <li>
+                    <a href="http://ambidestro.it" rel="noopener noreferrer"
+                      >ambidestro.it</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://pnzdevs.online" rel="noopener noreferrer"
+                      >pnzdevs.online</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://tiapnn.netlify.app/"
+                      rel="noopener noreferrer"
+                      >tiapnn.netlify.app</a
+                    >
+                  </li>
+                </ul>
+                <h5>
+                  Check out my blog posts! I post regulary about programming and
+                  other topics I'm working with!
+                </h5>
 
-            <!-- contact -->
-            <section id="contact" class="contact">
-                <h5 class="heading-4 sec-color mb-s">contact &mdash;</h5>
-                <div class="contact-box__wrapper">
-                    <div class="contact-box">
-                        <div class="contact-box-col">
-                            <div class="img-container"></div>
-                        </div>
-                        <div class="contact-box-col">
-                            <h2 class="heading-2">Mattia Penna</h2>
-                            <a class="anchors mailz" href="mailto:tiapnn@yahoo.it">tiapnn@yahoo.it</a><br>
-                            <a class="anchors" href="tel:+34691969203">+34 691969203</a><br>
-                            <a class="anchors" href="tel:+393317517969">+39 3317517969</a><br>
-                            <div class="anchors mt-m">
-                                <a href="https://github.com/tiapnn"><img class="grow" src="./img/svg/github.svg" alt="github"></a>
-                                <a href="https://codepen.io/tiapnn"><img class="grow" src="./img/svg/codepen.svg" alt="codepen"></a>
-                                <a href="https://www.linkedin.com/in/tiapnn/"><img class="grow" src="./img/svg/linkedin.svg" alt="linkedin"></a>
-                            </div>
-                        </div>
-                        <div class="contact-box-col" style="max-width: 270px;min-height: 150px;">
-                            <img src="./img/svg/quote.svg" alt="quote symbol" height="35px">
-                            <q class="quote fade" cite="https://www.journaldev.com/240/my-25-favorite-programming-quotes-that-are-funny-too">The best thing about a boolean is even if you are wrong, you are only off by a bit.</q>
-                        </div>
-                    </div>
-                </div> 
-            </section>
-
-            <!-- footer -->
-            <footer class="footer">
-                <h5 class="heading-5">© 2020 Mattia Penna</h5>
-            </footer>
-
+                <div class="icos-container">
+                  <i class="devicon-nodejs-plain"></i>
+                  <i class="devicon-vuejs-plain"></i>
+                  <i class="devicon-webpack-plain"></i>
+                  <i class="devicon-javascript-plain"></i>
+                  <i class="devicon-npm-original-wordmark"></i>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
+
+        <!-- achievements section -->
+        <section id="achievements" class="achievements">
+          <h5 class="heading-4 sec-color mb-s">My archivements &mdash;</h5>
+          <div class="achievements-box__wrapper">
+            <div class="achievements-box">
+              <h3 class="heading-3 mb-0">freeCodeCamp 🎓</h3>
+              <p class="paragraph mb-s">
+                I had the pleasure to finish the most complete online bootcamp.
+                <strong style="color: black">~ 1800hs</strong> of coursework for
+                my
+                <strong
+                  ><a
+                    href="https://www.freecodecamp.org/certification/tiapnn/full-stack"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Full-Stack Certification.</a
+                  ></strong
+                >
+              </p>
+
+              <ul>
+                <li>
+                  ✅
+                  <a
+                    href="https://www.freecodecamp.org/certification/tiapnn/responsive-web-design"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Responsive Web Design Certification</a
+                  >
+                </li>
+                <li>
+                  ✅
+                  <a
+                    href="https://www.freecodecamp.org/certification/tiapnn/javascript-algorithms-and-data-structures"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    JavaScript Algorithms and Data Structures Certification</a
+                  >
+                </li>
+                <li>
+                  ✅<a
+                    href="https://www.freecodecamp.org/certification/tiapnn/front-end-libraries"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Front End Libraries Certification</a
+                  >
+                </li>
+                <li>
+                  ✅<a
+                    href="https://www.freecodecamp.org/certification/tiapnn/data-visualization"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Data Visualization Certification</a
+                  >
+                </li>
+                <li>
+                  ✅<a
+                    href="https://www.freecodecamp.org/certification/tiapnn/apis-and-microservices"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    APIs and Microservices Certification</a
+                  >
+                </li>
+                <li>
+                  ✅<a
+                    href="https://www.freecodecamp.org/certification/tiapnn/information-security-and-quality-assurance"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Quality Assurance Certification</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div
+              href="https://profile.codersrank.io/user/tiapnn"
+              rel="noopener noreferrer"
+              target="_blank"
+              class="achievements-box"
+            >
+              <h3 class="heading-3 mb-0">CodersRank</h3>
+              <p class="paragraph mb-s">Don't we all love stats?</p>
+              <codersrank-widget
+                username="tiapnn"
+                layout="horizontal"
+                badges="3"
+              ></codersrank-widget>
+            </div>
+            <div class="achievements-box">
+              <h3 class="heading-3 mb-0">10fastfingers</h3>
+              <p class="paragraph mb-s">Think fast, type faster.</p>
+              <a
+                href="https://10fastfingers.com/typing-test/english"
+                rel="noopener noreferrer"
+                ><img
+                  src="https://img.10fastfingers.com/badge/typing-test_1_CD.png"
+                  alt="Typing Test"
+                  style="width: 100%"
+              /></a>
+            </div>
+          </div>
+        </section>
+
+        <!-- contact -->
+        <section id="contact" class="contact">
+          <h5 class="heading-4 sec-color mb-s">contact &mdash;</h5>
+          <div class="contact-box__wrapper">
+            <div class="contact-box">
+              <div class="contact-box-col">
+                <div class="img-container"></div>
+              </div>
+              <div class="contact-box-col">
+                <h2 class="heading-2">Mattia Penna</h2>
+                <a
+                  class="anchors mailz"
+                  rel="noopener noreferrer"
+                  href="mailto:tiapnn@yahoo.it"
+                  >tiapnn@yahoo.it</a
+                ><br />
+                <a
+                  class="anchors"
+                  rel="noopener noreferrer"
+                  href="tel:+34691969203"
+                  >+34 691969203</a
+                ><br />
+                <a
+                  class="anchors"
+                  rel="noopener noreferrer"
+                  href="tel:+393317517969"
+                  >+39 3317517969</a
+                ><br />
+                <div class="anchors mt-m">
+                  <a href="https://github.com/tiapnn" rel="noopener noreferrer"
+                    ><img class="grow" src="./img/svg/github.svg" alt="github"
+                  /></a>
+                  <a href="https://codepen.io/tiapnn" rel="noopener noreferrer"
+                    ><img
+                      class="grow"
+                      src="./img/svg/codepen.svg"
+                      alt="codepen"
+                  /></a>
+                  <a
+                    href="https://www.linkedin.com/in/tiapnn/"
+                    rel="noopener noreferrer"
+                    ><img
+                      class="grow"
+                      src="./img/svg/linkedin.svg"
+                      alt="linkedin"
+                  /></a>
+                </div>
+              </div>
+              <div
+                class="contact-box-col"
+                style="max-width: 270px; min-height: 150px"
+              >
+                <img
+                  src="./img/svg/quote.svg"
+                  alt="quote symbol"
+                  height="35px"
+                />
+                <q
+                  class="quote fade"
+                  cite="https://www.journaldev.com/240/my-25-favorite-programming-quotes-that-are-funny-too"
+                  >The best thing about a boolean is even if you are wrong, you
+                  are only off by a bit.</q
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- footer -->
+        <footer class="footer">
+          <h5 class="heading-5">© 2020 Mattia Penna</h5>
+        </footer>
+      </section>
     </div>
-    
+
     <script>
-        // distort scroll
-        const body = document.body,
-            scrollWrap = document.getElementsByClassName("smooth-scroll-wrapper")[0],
-            height = scrollWrap.getBoundingClientRect().height - '100px',
-            speed = 0.15;
+      // distort scroll
+      const body = document.body,
+        scrollWrap = document.getElementsByClassName(
+          "smooth-scroll-wrapper"
+        )[0],
+        height = scrollWrap.getBoundingClientRect().height - "100px",
+        speed = 0.15;
 
-        var offset = 0;
+      var offset = 0;
 
-        body.style.height = Math.floor(height) + "px";
+      body.style.height = Math.floor(height) + "px";
 
-        function smoothScroll() {
-            offset += (window.pageYOffset - offset) * speed;
+      function smoothScroll() {
+        offset += (window.pageYOffset - offset) * speed;
 
-            var scroll = "translateY(-" + offset + "px) translateZ(0)";
-            scrollWrap.style.transform = scroll;
+        var scroll = "translateY(-" + offset + "px) translateZ(0)";
+        scrollWrap.style.transform = scroll;
 
-            callScroll = requestAnimationFrame(smoothScroll);
-        }
+        callScroll = requestAnimationFrame(smoothScroll);
+      }
 
-        smoothScroll();
-        const content = document.querySelector("section");
-        let currentPos = window.pageYOffset;
+      smoothScroll();
+      const content = document.querySelector("section");
+      let currentPos = window.pageYOffset;
 
-        const callDistort = function () {
-            const newPos = window.pageYOffset;
-            const diff = newPos - currentPos;
-            const speed = diff * 0.07;
+      const callDistort = function () {
+        const newPos = window.pageYOffset;
+        const diff = newPos - currentPos;
+        const speed = diff * 0.07;
 
-            content.style.transform = "skewY(" + speed + "deg)";
-            currentPos = newPos;
-            requestAnimationFrame(callDistort);
-        };
+        content.style.transform = "skewY(" + speed + "deg)";
+        currentPos = newPos;
+        requestAnimationFrame(callDistort);
+      };
 
-        callDistort();
+      callDistort();
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/gsap.min.js"></script>
     <script src="./index.js"></script>
     <script src="https://profile.codersrank.io/widget/widget.js"></script>
-</body>
+  </body>
 </html>
